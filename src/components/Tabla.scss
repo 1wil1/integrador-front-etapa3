@@ -1,0 +1,29 @@
+@import "../utils/def.scss";
+
+table.tabla-alta {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 1rem auto;
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: $bluelight2;
+    }
+    tbody tr:nth-child(2n + 1){
+        background-color: rgba($color: $darkContrast, $alpha: 0.6);
+        &:hover{
+            background-color: rgba($color: $darkContrast, $alpha: 0.4);
+        }
+    }
+    tbody tr:nth-child(2n){
+        background-color: rgba($color: $bluelight2, $alpha: 0.5);
+        &:hover{
+            background-color: rgba($color: $bluelight2, $alpha: 0.4);
+        }
+    }
+}

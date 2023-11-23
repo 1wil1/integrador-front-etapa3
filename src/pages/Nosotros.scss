@@ -1,0 +1,69 @@
+@import "../utils/def.scss";
+
+.section-about-us{
+    background-color: $light1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-bottom: 4em;
+}
+
+
+/* ------------------------------------- */
+/* about-us                                */
+/* ------------------------------------- */
+
+.about-us{
+    background-color: $blueDark1;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 15px 3px rgba($blueDark1,0.8);
+    color: $light1;
+    &__info{
+        &__heading{
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            margin: 1em 0;
+        }
+        &__purpose,
+        &__services,
+        &__C-ON{
+            width: 40%;
+            min-width: 200px;
+            padding: 5em 2.5em;
+            height: min-content;
+            background-color: $blueDark2;
+        }
+        &__abaut-con-text{
+            margin-top: 1em;
+        }
+        &__services{
+            background-color: transparent;
+        }
+    }
+
+    @media (max-width: 768px) {
+        & {
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: stretch;
+          &__info{
+            padding: 1em 2em;
+            width: 70%;
+            min-width: 300px;
+
+            &__purpose,
+            &__services,
+            &__C-ON{
+                min-width: 350px;
+            }
+          }
+        }
+    }
+}

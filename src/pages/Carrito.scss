@@ -1,0 +1,40 @@
+@import "../utils/def.scss";
+
+table.tabla-carrito {
+    border-collapse: collapse;
+    width: 95%;
+    margin: 1rem auto;
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            & > i {
+                color: crimson;
+                &:active{
+                    color: red;
+                }
+            }
+        }
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+}
+.Opciones-carrito{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 2em;
+    padding: 1em;
+    button{
+        width: 20%;
+        padding: 1em 0;
+    }
+}

@@ -1,0 +1,15 @@
+
+@import "../utils/def.scss";
+
+.section-Title__header{
+    background-color: $bluelight1;
+    margin: 1em 0;
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+    h1{
+        margin: 0;
+        padding: 0;
+        font-size: 3em;
+    }
+}

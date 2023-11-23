@@ -1,0 +1,8 @@
+@import "../utils/def.scss";
+.section-alta{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 4em;
+    background-color: $light1;
+}

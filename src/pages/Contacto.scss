@@ -1,0 +1,112 @@
+@import "../utils/def.scss";
+
+
+.section-contact{
+    background-color: $light1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 4em;
+}
+
+/* ------------------------------------- */
+/* Contact                                */
+/* ------------------------------------- */
+
+.contactus{
+    background-color: $blueDark1;
+    margin: 1em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 0.3em;
+    box-shadow: 0px 0px 15px 3px rgba($blueDark1,0.8);
+    color: $light1;
+    &__info{
+        width: 30%;
+        min-width: 350px;
+        padding: 5em 2.5em;
+        height: max-content;
+        background-color: $blueDark2;
+        &__heading{
+            text-align: center;
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 600;
+            margin: 1em 0;
+        }
+        &__social-link,
+        &__social-list,
+        &__contact-list{
+            list-style-type: none;
+            color: $light1;
+        }
+        &__social-link:hover{
+            color: rgba($color: $light2, $alpha: 0.7);
+        }
+        &__social-list{
+            display: flex;
+            justify-content: center;
+            margin: 2em;
+            gap: 2em;
+        }
+        &__description{
+            padding: 2em 0;
+        }
+        &__contact-item{
+            padding: 0.2em 0;
+        }
+    }
+    &__form-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        padding: 5em;
+        width: 70%;
+    }
+    &__form-txtImp{
+        padding: 0.4em;
+        width: 70%;
+        resize: none;
+        font-family: "Open Sans", sans-serif;
+        border-radius: 0.4em;
+        border: none;
+        &:focus{
+            background-color: rgba($color: $lightContrast, $alpha: 0.2);
+            outline:1px solid $bluelight1;
+            border: none;
+            color: $light2;
+        }
+    }
+    &__form-submit{
+        background-color: rgba($color: $lightContrast, $alpha: 0.5);;
+        color: $bluelight1;
+        padding: 0.4em;
+        width: 20%;
+        border: none;
+        cursor: pointer;
+        &:active{
+            outline:1px solid $bluelight1;
+            border: 1px solid $dark1;
+        }
+    }
+    @media (max-width: 768px) {
+        & {
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: stretch;
+          &__info{
+            padding: 1em 2em;
+            width: 70%;
+            min-width: 300px;
+          }
+        }
+        &__form-container{
+            padding: 3em 0;
+        }
+        &__form-txtImp{
+            width: 100%;
+            padding: auto;
+        }
+    }
+}

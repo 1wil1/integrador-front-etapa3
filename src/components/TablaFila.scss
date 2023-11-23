@@ -1,0 +1,24 @@
+#img-row {
+    width: 50px;
+}
+
+button{
+    display: inline;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding-left: 5px;
+}
+.red{
+    color: crimson;
+    &:active{
+        color: red;
+    }
+}
+
+.green{
+    color: green;
+    &:active{
+        color: forestgreen;
+    }
+}

@@ -1,0 +1,87 @@
+@import "../utils/def.scss";
+
+.editar{
+    color: $light1;
+    box-sizing: border-box;
+    padding: 1px;
+    margin: 1em;
+
+    box-shadow: 0px 0px 15px 3px rgba($blueDark1,0.8);
+    border-radius: 0.3em;
+    background-color: $blueDark1;
+    &__title{
+        text-align: center;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 600;
+        padding: 0;
+        box-sizing: border-box;
+        &__continer{
+            margin-top: 1em;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+        }
+    }
+    &__icono{
+        color: green;
+    }
+    &__form{
+        padding: 3em;
+        &__content{
+            display: flex;
+            justify-content: space-around;
+            
+        }
+        &__imptxt{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            gap: 1em;
+        }
+
+        &__checkLbl, 
+        &__txtLbl{
+            align-self: start;
+            display: inline-block;
+            width: 10%;
+        }
+        &__txtImp{
+            padding: 0.4em;
+            width: 90%;
+            resize: none;
+            font-family: "Open Sans", sans-serif;
+            border-radius: 0.4em;
+            border: none;
+            &:focus{
+                background-color: rgba($color: $lightContrast, $alpha: 0.2);
+                outline:1px solid $bluelight1;
+                border: none;
+                color: $light2;
+            }
+        }
+        &__btns{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+        }
+        &__submit, &__reset{
+            display: inline-block;
+            background-color: rgba($color: $lightContrast, $alpha: 0.5);
+            color: $bluelight1;
+            padding: 0.4em;
+            width: 20%;
+
+            border: none;
+            cursor: pointer;
+            &:active{
+                outline:1px solid $bluelight1;
+                border: 1px solid $dark1;
+            }
+        }
+    }
+}
